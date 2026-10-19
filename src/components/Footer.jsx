@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container py-5 text-white">
                 <div className="row gap-5 py-5">
                     <div className="col-md-4">
-                        <img src="../public/logo-white.png" width="110" className="img-fluid mb-3" />
+                        <img src="/logo-white.png" width="110" className="img-fluid mb-3" />
                         <p className='py-2'>A nurturing learning community committed to academic excellence, creativity, and the all-round development of every student.</p>
                         <div className='d-flex gap-3'>
                             <a href="#" className='text-white fs-1'><i class="bi bi-facebook"></i></a>
