@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+
+:root {
+    --bs-primary: #e8a33d;
+    --bs-primary-rgb: 232, 163, 61;
+}
+
+.primary-c {
+    color: #e8a33d;
+}
+
+.second-c {
+    color: #1f3a5f;
+}
+
+.btn-primary {
+    background-color: #e8a33d;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #ffc266;
+}
+
+.logo h3{
+    letter-spacing: 5px;
+}
+
+.logo p{
+    font-size: 12px;
+}
+
+#hero {
+    background-color: #b36e09;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#hero .btn-primary {
+    background-color: #1f3a5f;
+}
+
+#hero .btn-primary:hover {
+    background-color: #1f4277;
+}
+
+#hero h2 {
+    font-size: 38px;
+}
+
+#hero h3 {
+    font-size: 28px;
+}
+
+#why-us .card:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+}
+
+#why-us h1,
+#programs h1,
+#highlights .mb-4,
+#facilities h1,
+#process h1,
+#dates h1,
+#required h1,
+#fees h1,
+#faqs h1,
+#testimonials h1,
+#contact h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#why-us p,
+#programs .mb-4,
+#highlights .m-0,
+#facilities .mb-4,
+#process .mb-5,
+#dates .mb-4,
+#required .mb-5,
+#fees .mb-5,
+#faqs p {
+    font-size: 26px
+}
+
+#programs,
+#process {
+    background-color: #f3f3f3;
+}
+
+#programs .card:hover {
+    z-index: 1;
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    border: none;
+    background-color: #e8a33d;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+
+    p,
+    li {
+        color: white;
+    }
+}
+
+#facilities .card:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+    transform: scale(1.01);
+    transition: 0.2s ease;
+}
+
+#highlights {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../public/highlights.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+#process {
+    overflow: hidden;
+}
+
+#process .row {
+    --line-top: 35px;
+}
+
+#process .row::before {
+    content: "";
+    position: absolute;
+    top: var(--line-top);
+    left: 8.333%;
+    width: 83.333%;
+    height: 3px;
+    background-color: #e8a33d;
+    z-index: 0;
+}
+
+#process .step {
+    position: relative;
+    z-index: 1;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1f3a5f;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 2px #1f3a5f;
+}
+
+#process p {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 8px;
+}
+
+@media (max-width: 767.98px) {
+    #process .row {
+        position: relative;
+    }
+
+    #process .row::before {
+        top: 35px;
+        bottom: 35px;
+        left: 45px;
+        width: 3px;
+        height: auto;
+        transform: none;
+    }
+
+    #process .process-step {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        text-align: left !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    #process .step {
+        flex-shrink: 0;
+        margin: 0 !important;
+    }
+
+    #process .process-step p {
+        flex: 1;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+#dates .row div:nth-child(2) .bg-dark-subtle {
+    background-color: #e8a33d !important;
+}
+
+@media (max-width: 768.01px) {
+    #dates .card div:first-child {
+        min-width: 150px;
+    }
+}
+
+#required {
+    background-color: #000000;
+}
+
+#required input {
+    height: 30px;
+    width: 30px;
+    accent-color: var(--bs-primary);
+}
+
+#fees {
+    .desktop-table {
+        display: block;
+
+        table {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        table tr:first-child {
+            background-color: #1f3a5f;
+            color: white;
+        }
+
+        table {
+            border: 1px solid #1f3a5f;
+        }
+
+        table th,
+        td {
+            font-size: 18px;
+            padding: 25px;
+        }
+
+        table td {
+            border-bottom: 1px solid #1f3a5f;
+        }
+    }
+
+    .mobile-table {
+        display: none;
+    }
+
+    @media (max-width:768.01px) {
+        .desktop-table {
+            display: none;
+        }
+
+        .mobile-table {
+            display: block;
+        }
+
+        .mobile-card {
+            border: #1f3a5f solid 1px;
+            border-radius: 5px;
+            margin: 15px;
+        }
+
+        .mobile-card div:first-child {
+            background-color: #1f3a5f;
+            padding: 5px;
+            border-radius: 4px;
+        }
+    }
+}
+
+#testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15)), url("../public/testimonials.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#faqs {
+    .accordion {
+        border: #1f3a5f 0px solid;
+    }
+}
+
+#contact {
+    background-color: #1f3a5f;
+
+    p {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+footer {
+    background-color: #001430;
+
+    .col-md-4 {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+#EnquiryModal {
+    .modal-content {
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .modal-header {
+        padding: 18px 24px;
+    }
+
+    .modal-body {
+        padding: 24px;
+    }
+
+    .form-control,
+    .form-select {
+        padding: 10px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #0d6efd;
+        box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.12);
+    }
+
+    .form-check-label {
+        font-size: 14px;
+    }
+
+    .alert-success {
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    .modal-footer {
+        gap: 8px;
+    }
+}
