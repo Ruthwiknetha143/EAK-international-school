@@ -92,7 +92,8 @@ body {
 #dates .mb-4,
 #required .mb-5,
 #fees .mb-5,
-#faqs p {
+#faqs p,
+#testimonials p:first-child  {
     font-size: 26px
 }
 

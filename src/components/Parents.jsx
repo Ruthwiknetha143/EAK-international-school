@@ -9,6 +9,7 @@ const Parents = () => {
     <section id='testimonials' className='py-5'>
       <div className="py-5">
         <div className="container py-5">
+          <p className='text-center text-white m-0'>Parent voices</p>
           <h1 className="text-center mb-5 text-white">
             What Parents Say
           </h1>
