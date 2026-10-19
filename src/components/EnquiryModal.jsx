@@ -35,7 +35,7 @@ const EnquiryModal = () => {
                 <div className="modal-content">
                     <div className="modal-header">
                         <h5
-                            className="modal-title"
+                            className="modal-title fw-bold"
                             id="EnquiryModalLabel"
                         >
                             Contact Form
@@ -176,7 +176,7 @@ const EnquiryModal = () => {
                                                 id="personalisedSuggestions"
                                                 name="personalisedSuggestions"
                                                 value="yes"
-                                                className="form-check-input"
+                                                className="form-check-input border-black"
                                             />
 
                                             <label
