@@ -40,7 +40,7 @@ const Hero = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <img src="../public/hero_banner.png" className="img-fluid" alt="" />
+            <img src="/hero_banner.png" className="img-fluid" alt="" />
           </div>
         </div>
       </div>

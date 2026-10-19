@@ -9,7 +9,7 @@ function Navbar() {
       <div className="container py-2">
 
         <a href="#">
-          <img src="../public/logo.png" width="110" className="img-fluid navbar-brand mb-0" />
+          <img src="/logo.png" width="110" className="img-fluid navbar-brand mb-0" />
         </a>
 
         <button

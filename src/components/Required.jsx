@@ -48,7 +48,7 @@ const Required = () => {
                         <h4 className='py-3 primary-c'>{ready} out of {DOCS.length} ready</h4>
                     </div>
                     <div className="col-md-6">
-                        <img src="../public/Required-Documents.png" className='img-fluid' alt="" />
+                        <img src="/Required-Documents.png" className='img-fluid' alt="" />
                     </div>
                 </div>
             </div>

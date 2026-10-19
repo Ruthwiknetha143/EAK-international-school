@@ -13,7 +13,7 @@ const Facilities = () => {
                             <>
                                 <div className="col-md-3">
                                     <div className="card">
-                                        <img src={`../public/${value.img}.jpg`} className='card-img-top img-fluid' loading='lazy' />
+                                        <img src={`/${value.img}.jpg`} className='card-img-top img-fluid' loading='lazy' />
                                         <div className="card-body">
                                             <h4 className='card-title second-c'>{value.title}</h4>
                                             <p className='card-text'>{value.desc}</p>

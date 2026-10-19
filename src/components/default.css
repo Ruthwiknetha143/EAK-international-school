@@ -122,7 +122,7 @@ body {
 }
 
 #highlights {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../public/highlights.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("/highlights.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -281,7 +281,7 @@ body {
 }
 
 #testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15)), url("../public/testimonials.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15)), url("/testimonials.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
