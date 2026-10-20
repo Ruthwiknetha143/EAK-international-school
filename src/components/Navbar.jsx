@@ -27,7 +27,7 @@ function Navbar() {
             <li className="nav-item"><a className="nav-link" href="#facilities">Facilities</a></li>
             <li className="nav-item"><a className="nav-link" href="#process">Admission Process</a></li>
             <li className="nav-item"><a className="nav-link" href="#fees">Fees</a></li>
-            <li className="nav-item"><a className="nav-link" href="#">FAQ</a></li>
+            <li className="nav-item"><a className="nav-link" href="#faqs">FAQ</a></li>
           </ul>
 
           <a className="btn btn-primary second-c fw-bold rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#EnquiryModal">Enquire Now</a>
