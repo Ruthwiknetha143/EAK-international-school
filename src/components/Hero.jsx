@@ -13,8 +13,8 @@ const Hero = () => {
               <p>A safe, modern campus where every child is challenged, supported and celebrated, from Grade 1 to Grade 12.</p>
             </div>
             <div className='d-flex pt-2 gap-2'>
-              <a data-bs-toggle="modal" data-bs-target="#EnquiryModal" className='btn btn-primary rounded-pill px-4'>Apply Now →</a>
-              <a data-bs-toggle="modal" data-bs-target="#EnquiryModal" className='btn btn-light rounded-pill px-4'>Schedule a visit ☎</a>
+              <button type='button' data-bs-toggle="modal" data-bs-target="#EnquiryModal" className='btn btn-primary rounded-pill px-4'>Apply Now →</button>
+              <button type='button' data-bs-toggle="modal" data-bs-target="#EnquiryModal" className='btn btn-light rounded-pill px-4'>Schedule a visit ☎</button>
             </div>
             <div className="row py-4 g-3">
               <div className="col-4">

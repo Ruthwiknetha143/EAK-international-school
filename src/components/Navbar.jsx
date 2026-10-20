@@ -30,7 +30,7 @@ function Navbar() {
             <li className="nav-item"><a className="nav-link" href="#faqs">FAQ</a></li>
           </ul>
 
-          <a className="btn btn-primary second-c fw-bold rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#EnquiryModal">Enquire Now</a>
+          <button type="button" className="btn btn-primary second-c fw-bold rounded-pill px-4" data-bs-toggle="modal" data-bs-target="#EnquiryModal">Enquire Now</button>
         </div>
 
       </div>

@@ -23,7 +23,7 @@ const Footer = () => {
                             <p className='m-0 fw-bold'>Phone</p>
                             <p>+91 98765 43210</p>
                             <p className='m-0 fw-bold'>Email</p>
-                            <p>admissions@brightfuture.example</p>
+                            <p>admissions@eakinternational.example</p>
                             <p className='m-0 fw-bold'>Office Hours</p>
                             <p>Monday–Saturday: 9:00 AM–4:00 PM <br />
                                 Sunday: Closed</p>
