@@ -1,66 +1,87 @@
 # EAK International School: Admissions Landing Page (2027-28)
 
-A single-page, responsive admissions landing page built with **React (Vite)** and **Bootstrap 5** (via `react-bootstrap`). Frontend only, all content is hard-coded sample data.
+A responsive, single-page admissions landing page for the fictional EAK International School, built as a frontend assignment. It takes a parent from learning about the school to sending an enquiry. All content is hard-coded sample data and there is no backend.
 
-## Run it
+**Live demo:** <add your Vercel link here>
 
-You need Node.js 18 or newer.
+## Screenshots
+
+<add a desktop and a mobile screenshot here, e.g. ![Desktop](screenshots/desktop.png)>
+
+## Tech stack
+
+| Technology | Used for |
+|---|---|
+| React 19 | Component-based UI |
+| Vite | Dev server and production build |
+| Bootstrap 5 | Grid, cards, navbar, modal, accordion, forms, utility classes |
+| Bootstrap Icons | Icons in the "Why choose us" cards and footer |
+| Google Fonts (Poppins) | Typography |
+| Plain CSS (`default.css`) | Brand colours, section styling and responsive tweaks |
+
+## Getting started
+
+Requires Node.js 18 or newer.
 
 ```bash
+git clone https://github.com/Ruthwiknetha143/EAK-international-school.git
+cd EAK-international-school
 npm install
-npm run dev        # opens at http://localhost:5173
-npm run build      # production build into /dist
-npm run preview    # serve the production build locally
+npm run dev       # development server at http://localhost:5173
+npm run build     # production build into /dist
+npm run preview   # preview the production build locally
+npm run lint      # run ESLint
 ```
 
-## Sections (in the order required by the brief)
+## Page sections
 
-1. Hero  2. Why choose us  3. Academic programs  4. School highlights  5. Facilities  6. Admission process
-7. Important dates  8. Required documents  9. Fee information  10. Parent testimonials  11. FAQ  12. Final call to action
-(plus sticky navbar and footer)
+1. Hero (Apply Now / Schedule a Visit)
+2. Why choose us
+3. Academic programs
+4. School highlights
+5. Facilities
+6. Admission process
+7. Important dates
+8. Required documents (interactive checklist)
+9. Fee information
+10. Parent testimonials
+11. FAQ
+12. Final call to action
 
-## Working interactions
+Plus a sticky navbar and a footer with contact details and quick links.
 
-- Sticky navbar with smooth-scroll links, active-section highlight, hamburger menu on mobile (closes on link tap or Esc)
-- One reusable **Enquiry modal** opened from the navbar, hero, programs, process, fees, FAQ and final CTA. Validation with inline errors, then a thank-you state. Buttons such as "Schedule a Visit" preselect "Campus visit".
-- "Talk to Our Admissions Team" opens a contact pop-up
-- Count-up statistics (skipped for users who prefer reduced motion)
-- Documents checklist with progress bar
-- FAQ accordion (one answer open at a time)
-- Testimonials: grid on tablet/desktop, slider with arrows and dots on phones
-- Fees: table on tablet/desktop, cards on phones (no sideways scrolling)
+## Features and interactions
 
-## Responsive approach
+- Sticky navbar with anchor links to each section and a collapsible menu on mobile
+- Enquiry modal opened from the navbar, hero and final call-to-action buttons. It uses browser validation for required fields and shows a success message on submit (nothing is sent anywhere)
+- Required-documents checklist with a live "x out of 5 ready" counter
+- FAQ accordion (Bootstrap collapse)
+- Fee information as a table on larger screens and as cards on phones
+- Testimonials shown as a grid on larger screens and as a previous/next slider on phones
 
-Mobile-first CSS in `src/styles/theme.css`, using Bootstrap's grid and breakpoints (sm 576, md 768, lg 992, xl 1200). The admission process turns from a vertical timeline (phone) into a horizontal flow (desktop).
+## Responsive design
 
-## Folder structure
+Built with Bootstrap's grid and breakpoints plus custom media queries. The layout was checked at phone, tablet and desktop widths. The admission process turns from a horizontal flow on desktop into a vertical timeline on mobile.
+
+## Project structure
 
 ```
+public/                 images and logos (served from the site root, e.g. /hero_banner.png)
 src/
-  main.jsx                  entry point, imports fonts and CSS
-  App.jsx                   page = navbar + 12 sections + footer
-  data/content.js           ALL text, numbers, fees, FAQs (edit here)
-  context/EnquiryContext    lets any button open the modals
-  hooks/                    useInView (scroll reveal), useActiveSection (navbar highlight)
-  components/               one file per section, plus modals and shared heading
-  styles/theme.css          design tokens + styles per section
-public/favicon.svg
+  main.jsx              app entry point
+  App.jsx               root component
+  components/           one component per section, plus the enquiry modal
+    default.css         global and per-section styles
+  data/content.js       all page content (programs, fees, FAQs, dates, testimonials...)
 ```
 
-## Libraries used and why
+All text content lives in `src/data/content.js`, so wording can be changed without editing components.
 
-- **react / react-dom**: UI
-- **vite**: dev server and build
-- **bootstrap + react-bootstrap**: grid, navbar, modal, accordion, carousel, form controls (accessible by default)
-- **bootstrap-icons**: icons
-- **@fontsource-variable/fraunces and dm-sans**: headings and body fonts, bundled locally
+## Assets
 
-## Images
-
-The hero and facility pictures are illustrated placeholders (gradients + icons) so the project has no external image dependency. To use real photos, drop royalty-free images (Unsplash, Pexels, Pixabay) into `public/images/` and swap them in (see the comments in `Hero.jsx` and `Facilities.jsx`). Credit them here.
+Images are stored locally in `public/`. <credit your image sources here, e.g. Unsplash / Pexels, with photographer names if you can>
 
 ## Known limitations
 
-- The enquiry form does not send data anywhere (frontend-only by design).
-- All names, dates, statistics and fees are fictional sample data.
+- The enquiry form does not submit anywhere (frontend only, as per the assignment brief)
+- Names, dates, statistics, fees and testimonials are fictional sample data
