@@ -3,7 +3,7 @@ import Mine from './components/Mine';
 
 const App = () => {
   return (
-    <Mine/>
+    <Mine />
   )
 }
 

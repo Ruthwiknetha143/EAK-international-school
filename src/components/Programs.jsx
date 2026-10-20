@@ -11,7 +11,7 @@ const Programs = () => {
                     {PROGRAMS.map(value => {
                         return (
                             <>
-                                <div className="col-md-3">
+                                <div className="col-md-6">
                                     <div className="card p-3">
                                         <div className="card-body">
                                             <h4 className='card-title second-c'>{value.title}</h4>

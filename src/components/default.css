@@ -32,11 +32,11 @@ body {
     background: #ffc266;
 }
 
-.logo h3{
+.logo h3 {
     letter-spacing: 5px;
 }
 
-.logo p{
+.logo p {
     font-size: 12px;
 }
 
@@ -55,7 +55,7 @@ body {
     background-color: #1f4277;
 }
 
-#hero .school{
+#hero .school {
     font-size: 50px;
 }
 
@@ -97,8 +97,39 @@ body {
 #required .mb-5,
 #fees .mb-5,
 #faqs p,
-#testimonials p:first-child  {
+#testimonials p:first-child {
     font-size: 26px
+}
+
+@media (max-width:768.01px) {
+
+    #why-us h1,
+    #programs h1,
+    #highlights .mb-4,
+    #facilities h1,
+    #process h1,
+    #dates h1,
+    #required h1,
+    #fees h1,
+    #faqs h1,
+    #testimonials h1,
+    #contact h1 {
+        font-size: 45px;
+        font-weight: bold;
+    }
+
+    #why-us p,
+    #programs .mb-4,
+    #highlights .m-0,
+    #facilities .mb-4,
+    #process .mb-5,
+    #dates .mb-4,
+    #required .mb-5,
+    #fees .mb-5,
+    #faqs p,
+    #testimonials p:first-child {
+        font-size: 16px
+    }
 }
 
 #programs,
