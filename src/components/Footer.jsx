@@ -41,9 +41,6 @@ const Footer = () => {
                             <li className='mb-2'><a href="#faqs" className='text-white text-decoration-none'>FAQ</a></li>
                         </ul>
                     </div>
-                    <div className="col-md-3">
-
-                    </div>
                 </div>
             </div>
         </footer>
