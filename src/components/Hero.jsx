@@ -14,7 +14,7 @@ const Hero = () => {
             </div>
             <div className='d-flex pt-2 gap-2'>
               <button type='button' data-bs-toggle="modal" data-bs-target="#EnquiryModal" className='btn btn-primary rounded-pill px-4'>Apply Now →</button>
-              <a href='https://ruthwiknetha143.github.io/eak-school-admissions-landing/' type='button' className='btn btn-light rounded-pill px-4'>Visit AI Site ✦</a>
+              <a href='https://ruthwiknetha143.github.io/eak-school-admissions-landing/' type='button' className='btn btn-light rounded-pill px-4' target='_blank'>Visit AI Site ✦</a>
             </div>
             <div className="row py-4 g-3">
               <div className="col-4">
