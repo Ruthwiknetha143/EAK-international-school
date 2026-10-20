@@ -6,7 +6,7 @@ const Hero = () => {
       <div className="container pt-5">
         <div className="row align-items-center">
           <div className="col-md-6">
-            <h1 className='text-uppercase text-white fw-bold'>EAK International School</h1>
+            <h1 className='text-uppercase text-white fw-bold school'>EAK International School</h1>
             <div className=' text-white'>
               <h2>Admissions Open now</h2>
               <h3>Academic Session 2027-28</h3>
