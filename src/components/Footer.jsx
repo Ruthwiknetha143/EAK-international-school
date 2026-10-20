@@ -32,13 +32,13 @@ const Footer = () => {
                     <div className="col-md-4">
                         <h5 className='primary-c mb-4'>Quick Links</h5>
                         <ul className='list-unstyled'>
-                            <li><a href="#" className='text-white text-decoration-none'>Back To Top</a></li>
-                            <li><a href="#why-us" className='text-white text-decoration-none'>Why Us</a></li>
-                            <li><a href="#programs" className='text-white text-decoration-none'>Programs</a></li>
-                            <li><a href="#facilities" className='text-white text-decoration-none'>Facilities</a></li>
-                            <li><a href="#process" className='text-white text-decoration-none'>Admissions Process</a></li>
-                            <li><a href="#fees" className='text-white text-decoration-none'>Fees</a></li>
-                            <li><a href="#faqs" className='text-white text-decoration-none'>FAQ</a></li>
+                            <li className='mb-2'><a href="#" className='text-white text-decoration-none'>Back To Top</a></li>
+                            <li className='mb-2'><a href="#why-us" className='text-white text-decoration-none'>Why Us</a></li>
+                            <li className='mb-2'><a href="#programs" className='text-white text-decoration-none'>Programs</a></li>
+                            <li className='mb-2'><a href="#facilities" className='text-white text-decoration-none'>Facilities</a></li>
+                            <li className='mb-2'><a href="#process" className='text-white text-decoration-none'>Admissions Process</a></li>
+                            <li className='mb-2'><a href="#fees" className='text-white text-decoration-none'>Fees</a></li>
+                            <li className='mb-2'><a href="#faqs" className='text-white text-decoration-none'>FAQ</a></li>
                         </ul>
                     </div>
                     <div className="col-md-3">
